@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>名片助理 隱私權政策</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1f2933; --muted:#52606d; --accent:#1f5fae; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14181f; --fg:#e4e7eb; --muted:#9aa5b1; --accent:#7fb0ff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif; line-height:1.75; }
+  main { max-width:760px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:26px; margin:0 0 4px; }
+  h2 { font-size:19px; margin:28px 0 6px; }
+  p, li { color:var(--muted); }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>名片助理 隱私權政策</h1>
+  <p>最後更新：2026 年 11 月 18 日</p>
+
+  <h2>一、適用範圍</h2>
+  <p>本政策說明公司內部 AI 助理的「名片助理」功能（以下稱「本服務」）如何蒐集、使用、保存使用者資料。本服務僅供公司內部同仁使用。</p>
+
+  <h2>二、蒐集的資料</h2>
+  <ul>
+    <li>同仁主動傳送的名片照片，以及從名片辨識出的聯絡資訊（姓名、公司、職稱、電話、電子郵件、地址等）。</li>
+    <li>同仁在通訊軟體中的帳號識別碼（用於辨識使用者與權限）。</li>
+    <li>經同仁授權後取得的 Google 帳號存取權杖，僅用於將名片新增到該同仁的 Google 通訊錄。</li>
+  </ul>
+
+  <h2>三、Google 使用者資料的使用</h2>
+  <p>本服務透過 Google People API 取得 <code>https://www.googleapis.com/auth/contacts</code> 權限，用途僅限於：</p>
+  <ul>
+    <li>在同仁本人的 Google 通訊錄中「新增」由其傳送的名片聯絡人，並建立「名片助理」聯絡人群組。</li>
+  </ul>
+  <p>本服務不會讀取、分析、修改或刪除使用者既有的聯絡人；不會將 Google 使用者資料出售、轉讓或提供給第三方；不會用於廣告；也不會用於訓練人工智慧或機器學習模型。</p>
+  <p>本服務對於從 Google API 取得之資訊的使用與傳輸，遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服務使用者資料政策</a>，包括「有限使用」（Limited Use）要求。</p>
+
+  <h2>四、資料處理與保存</h2>
+  <ul>
+    <li>名片資料保存在公司自行管理的伺服器，僅供公司內部依權限查閱。</li>
+    <li>Google 存取權杖以加密方式保存，僅用於新增聯絡人。</li>
+    <li>名片辨識使用 Anthropic 公司的 Claude API 處理影像與文字，該處理僅用於產生辨識結果。</li>
+  </ul>
+
+  <h2>五、使用者權利與撤銷授權</h2>
+  <ul>
+    <li>同仁可隨時在助理中傳送 <code>/google_off</code> 停用同步，系統即刪除所保存的 Google 存取權杖。</li>
+    <li>也可至 <a href="https://myaccount.google.com/connections">Google 帳戶「第三方連結」</a> 移除本服務的存取權。</li>
+    <li>如需查詢或刪除已建檔的名片資料，請洽公司內部系統管理者。</li>
+  </ul>
+
+  <h2>六、聯絡方式</h2>
+  <p>對本政策有任何疑問，請洽公司內部系統管理者。</p>
+
+  <h2>七、政策更新</h2>
+  <p>本政策如有修改，將更新於本頁並註明更新日期。</p>
+</main>
+</body>
+</html>
